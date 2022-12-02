@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["scripts/content_scripts.js"]
+            "js": ["scripts/content_script.js"]
         }
     ]
 }
