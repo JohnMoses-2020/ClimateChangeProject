@@ -3,10 +3,14 @@
     "version": "1.0",
     "manifest_version": 3,
     "host_permissions": ["<all_urls>"],
+    "permissions": ["tabs"],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["scripts/content_script.js"]
         }
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
 }
