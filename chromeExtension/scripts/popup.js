@@ -7,7 +7,9 @@ async function requestNumFlags(){
         tabs[0].id,
         { request: true },
         function (response) {
-            num_flags = response.num_flags;
+            if(num_flags){
+                num_flags = response.num_flags;
+            }
             alertMisinfo(num_flags);
         }
     );
@@ -19,7 +21,7 @@ function alertMisinfo(num_flags){
     console.log('here: '+num_flags);
     var warning = document.querySelector(".climate_watch_flag_warning");
     if(num_flags > 0){
-        warning.innerHTML = "<strong>Warning</strong> "+num_flags+" instance(s) of climate misinformation found be careful with this site!";
+        warning.innerHTML = "<strong>Warning</strong> potential climate misinformation has been found, be careful trusting this site!";
     }else{
         warning.innerText = "No climate misinformation found here enjoy the site!";
     }
