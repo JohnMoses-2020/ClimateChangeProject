@@ -144,7 +144,7 @@ function flagMisinfo(text, words){
         span.appendChild(ttheader);
         var ttText=document.createElement("p");
         ttText.classList.add('climateWatch_tooltipTextMessage'+i);
-        ttText.innerText="We think this text could potentially be climate misinformation. Is our diagnosis accurate?";
+        ttText.innerHTML="We think this text could potentially be climate misinformation. Here is a more reliable source: Is our diagnosis accurate?";
         span.appendChild(ttText);
         var button1=document.createElement("button");
         button1.innerText="Yes";
