@@ -7,8 +7,10 @@ async function requestNumFlags(){
         tabs[0].id,
         { request: true },
         function (response) {
-            if(num_flags){
-                num_flags = response.num_flags;
+            if(response.num_flags){
+                var num_flags = response.num_flags;
+            }else{
+                var num_flags = 0;
             }
             alertMisinfo(num_flags);
         }
@@ -28,3 +30,11 @@ function alertMisinfo(num_flags){
 }
 
 requestNumFlags();
+
+document.querySelector('#go_toOptions').addEventListener('click',function(){
+    if(chrome.runtime.openOptionsPage){
+        chrome.runtime.openOptionsPage();
+    }else{
+        window.open(chrome.runtime.getURL('options.html'));
+    }
+});
