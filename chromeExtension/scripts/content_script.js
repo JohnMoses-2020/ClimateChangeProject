@@ -60,7 +60,7 @@ const flagged_words = ['God is in control of the climate',
 'Climate change will have no harmful impacts',
 'climate change will have no harmful impacts',
 'Scientists aren’t in agreement about climate change',
-'scientits aren’t in agreemnt about climate change'];
+'scientits aren’t in agreement about climate change'];
 var num_flags;
 
 //This function gathers all the text from the site and places it in a variable
@@ -136,9 +136,40 @@ function flagMisinfo(text, words){
     }
     var flaggedElements = document.getElementsByClassName('climateWatch_tooltip');
     for(let i=0; i<flaggedElements.length; i++){
-        var span=document.createElement("span"); 
+        let span=document.createElement("span"); 
         span.classList.add('climateWatch_tooltipText');
-        span.innerText="test123";
+        //span.innerText="test123";
+        var ttheader=document.createElement("h4");
+        ttheader.innerText="Climate Watch";
+        span.appendChild(ttheader);
+        var ttText=document.createElement("p");
+        ttText.classList.add('climateWatch_tooltipTextMessage'+i);
+        ttText.innerText="We think this text could potentially be climate misinformation. Is our diagnosis accurate?";
+        span.appendChild(ttText);
+        var button1=document.createElement("button");
+        button1.innerText="Yes";
+        button1.classList.add('climateWatch_tooltipTextB1'+i);
+        button1.onclick = function(){
+            let ttP = document.querySelector('p.climateWatch_tooltipTextMessage'+i);
+            let b1 = document.querySelector('button.climateWatch_tooltipTextB1'+i);
+            let b2 = document.querySelector('button.climateWatch_tooltipTextB2'+i);
+            b1.style.visibility = 'hidden';
+            b2.style.visibility = 'hidden';
+            ttP.innerText = 'Thank you for your feedback';
+        }
+        span.appendChild(button1);
+        var button2=document.createElement("button");
+        button2.innerText="No";
+        button2.classList.add('climateWatch_tooltipTextB2'+i);
+        button2.onclick = function(){
+            let ttP = document.querySelector('p.climateWatch_tooltipTextMessage'+i);
+            let b1 = document.querySelector('button.climateWatch_tooltipTextB1'+i);
+            let b2 = document.querySelector('button.climateWatch_tooltipTextB2'+i);
+            b1.style.visibility = 'hidden';
+            b2.style.visibility = 'hidden';
+            ttP.innerText = 'Thank you for your feedback!';
+        }
+        span.appendChild(button2);
         flaggedElements[i].appendChild(span);
     }
     console.log(num_flags);
