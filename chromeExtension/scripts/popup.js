@@ -23,9 +23,9 @@ function alertMisinfo(num_flags){
     console.log('here: '+num_flags);
     var warning = document.querySelector(".climate_watch_flag_warning");
     if(num_flags > 0){
-        warning.innerHTML = "<strong>Warning</strong> potential climate misinformation has been found, be careful trusting this site!";
+        warning.innerHTML = "<strong>Warning</strong> potential climate misinformation has been found, be careful trusting this site! To report extra misinformation, <a href='https://docs.google.com/forms/d/e/1FAIpQLSeWNWyC1mBsotg548AcznJJy6PaecI-aecJAXvIztlHLhb7wg/viewform' target='_blank'> click here! </a>";
     }else{
-        warning.innerText = "No climate misinformation found here enjoy the site!";
+        warning.innerHTML = "No climate misinformation found here, enjoy the site! To report misinformation, <a href='https://docs.google.com/forms/d/e/1FAIpQLSeWNWyC1mBsotg548AcznJJy6PaecI-aecJAXvIztlHLhb7wg/viewform' target='_blank'> click here! </a>";
     }
 }
 

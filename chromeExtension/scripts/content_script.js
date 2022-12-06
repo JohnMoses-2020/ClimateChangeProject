@@ -92,67 +92,181 @@ function flagMisinfo(text, words, oAndE, manMade, impacts, science, highlightCol
             }
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('not real') && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('not happening') && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('not man-made') && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('not man made') && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('no harm') && impacts){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('no harmful') && impacts){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('no harmful impact') && impacts){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes('no impact') && impacts){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("isn't real") && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("Scientists do not agree") && science){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("scientists do not agree") && science){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("Scientists don't agree") && science){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("scientists don't agree") && science){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("political fiction") && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerHTML+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("humans cause") && text[i].innerText.includes("not true") && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("humans cause") && text[i].innerText.includes("false") && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if(text[i].innerText.includes('no climate emergency') && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("human responsibility") && text[i].innerText.includes("exaggerated") && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("human responsibility") && text[i].innerText.includes("not realistic") && manMade){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("exaggerated") && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerHTML+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
         if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("not realistic") && oAndE){
-            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerText,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip'>"+text[i].innerText+"</span>"));
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Climate change') || text[i].innerText.includes('climate change')) && text[i].innerText.includes("wrong") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Climate') || text[i].innerText.includes('climate')) && text[i].innerText.includes("wrong") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('higher temperatures') || text[i].innerText.includes('lower temperatures')) && text[i].innerText.includes("no") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('higher temperatures') || text[i].innerText.includes('lower temperatures')) && text[i].innerText.includes("not true") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('higher temperatures') || text[i].innerText.includes('lower temperatures')) && text[i].innerText.includes("not happening") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('higher temperatures') || text[i].innerText.includes('lower temperatures')) && text[i].innerText.includes("false") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('global warming') || text[i].innerText.includes('Global warming')) && text[i].innerText.includes("not real") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("human responsibility") && text[i].innerText.includes("exaggerated") && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("human responsibility") && text[i].innerText.includes("not realistic") && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("exaggerated") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("not realistic") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("wrong") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('not real') && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('not happening') && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('not man-made') && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('not man made') && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('no harm') && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('no harmful') && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('no harmful impact') && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes('no impact') && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip impacts'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("isn't real") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("Scientists do not agree") && science){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("scientists do not agree") && science){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("Scientists don't agree") && science){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("scientists don't agree") && science){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip science'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("political fiction") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("humans cause") && text[i].innerText.includes("not true") && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("humans cause") && text[i].innerText.includes("false") && manMade){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("catastrophic") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Global warming') || text[i].innerText.includes('global warming')) && text[i].innerText.includes("absurd") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if(text[i].innerText.includes("‘climate emergency’ narrative") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if(text[i].innerText.includes('“climate emergency”') && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Environmental movement') || text[i].innerText.includes('environmental movement')) && text[i].innerText.includes("instill fear") && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Greenpeace') || text[i].innerText.includes('greenpeace')) && text[i].innerText.includes("fake") && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Greenpeace') || text[i].innerText.includes('greenpeace')) && text[i].innerText.includes("false") && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Polar bear') || text[i].innerText.includes('polar bear')) && text[i].innerText.includes("extinct") && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if((text[i].innerText.includes('Polar bear pop') || text[i].innerText.includes('polar bear pop')) && text[i].innerText.includes("increased") && impacts){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip manMade'>"+text[i].innerHTML+"</span>"));
+        }
+        if(text[i].innerText.includes('environmental apocalypse theory') && oAndE){
+            text[i].innerHTML = text[i].innerHTML.replace(text[i].innerHTML,replacementNum("<span style='background-color:"+highlightColor+"' class='climateWatch_tooltip oAndE'>"+text[i].innerHTML+"</span>"));
         }
     }
     var flaggedElements = document.getElementsByClassName('climateWatch_tooltip');
@@ -164,8 +278,44 @@ function flagMisinfo(text, words, oAndE, manMade, impacts, science, highlightCol
         span.appendChild(ttheader);
         var ttText=document.createElement("p");
         ttText.classList.add('climateWatch_tooltipTextMessage'+i);
-        ttText.innerHTML="We think this text could potentially be climate misinformation. Here is a more reliable source: <a href='https://climate.nasa.gov/' target='_blank'>climate.nasa.gov</a> Is our diagnosis accurate?";
+        var falseClaim = "climate change and its impacts are not real"
+        var correctLink = "https://climate.nasa.gov/"
+        if (flaggedElements[i].classList.contains("oAndE")) {
+            falseClaim = "climate change is not occuring";
+            correctLink = "https://climatefeedback.org/claimreview/warming-earths-surface-oceans-continues-apace-contrary-to-claims-daily-sceptic-chris-morrison/";
+
+        } else if (flaggedElements[i].classList.contains("impacts")) {
+            falseClaim = "the impacts of climate change will not cause significant harm";
+            correctLink = "https://climatefeedback.org/claimreview/the-epoch-times-prints-range-of-inaccurate-misleading-claims-climate-changes-impacts-causes-patrick-moore/";
+
+        } else if (flaggedElements[i].classList.contains("science")) {
+            falseClaim = "scientists are not in concensus about climate change";
+            correctLink = "https://climatefeedback.org/evaluation/article-by-michael-shellenberger-mixes-accurate-and-inaccurate-claims-in-support-of-a-misleading-and-overly-simplistic-argumentation-about-climate-change/";
+
+        } else if (flaggedElements[i].classList.contains("manmade")) {
+            falseClaim = "climate change is not manmade";
+            correctLink = "https://climatefeedback.org/claimreview/letter-there-is-no-climate-emergency-repeats-inaccurate-claims-about-climate-science-daily-sceptic-toby-young/";
+
+        }
+        ttText.innerHTML="We think this text could potentially be climate misinformation. Particularly, it seems to be making claims that " + falseClaim +". Here is a more reliable source: ";
         span.appendChild(ttText);
+        var linkButton=document.createElement("button")
+        linkButton.innerText="Click here for correct info (external)"
+        linkButton.classList.add('climateWatch_tooltipTextLB'+i)
+        linkButton.classList.add('blockButton')
+        linkButton.classList.add(correctLink) //store the right link
+        linkButton.onclick = function(){
+            let ttP = document.querySelector('p.climateWatch_tooltipTextMessage'+i);
+            let lb = document.querySelector('button.climateWatch_tooltipTextLB'+i);
+            let b1 = document.querySelector('button.climateWatch_tooltipTextB1'+i);
+            let b2 = document.querySelector('button.climateWatch_tooltipTextB2'+i);
+            ttP.innerText = 'Is this article relevant to the flagged misinformation?';
+            b1.style.opacity = 1;
+            b2.style.opacity = 1;
+            lb.style.visibility = 'hidden';
+            window.open(this.classList[this.classList.length - 1], '_blank'); //access the right link
+        }
+        span.appendChild(linkButton)
         var button1=document.createElement("button");
         button1.innerText="Yes";
         button1.classList.add('climateWatch_tooltipTextB1'+i);
@@ -173,10 +323,11 @@ function flagMisinfo(text, words, oAndE, manMade, impacts, science, highlightCol
             let ttP = document.querySelector('p.climateWatch_tooltipTextMessage'+i);
             let b1 = document.querySelector('button.climateWatch_tooltipTextB1'+i);
             let b2 = document.querySelector('button.climateWatch_tooltipTextB2'+i);
-            b1.style.visibility = 'hidden';
-            b2.style.visibility = 'hidden';
+            b1.style.opacity = 0;
+            b2.style.opacity = 0;
             ttP.innerText = 'Thank you for your feedback';
         }
+        button1.style.opacity = 0;
         span.appendChild(button1);
         var button2=document.createElement("button");
         button2.innerText="No";
@@ -187,8 +338,9 @@ function flagMisinfo(text, words, oAndE, manMade, impacts, science, highlightCol
             let b2 = document.querySelector('button.climateWatch_tooltipTextB2'+i);
             b1.style.visibility = 'hidden';
             b2.style.visibility = 'hidden';
-            ttP.innerText = 'Thank you for your feedback!';
+            ttP.innerHTML = 'Thank you for your feedback! If you want to, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWNWyC1mBsotg548AcznJJy6PaecI-aecJAXvIztlHLhb7wg/viewform" target="_blank">click here to submit a report.</a>';
         }
+        button2.style.opacity = 0;
         span.appendChild(button2);
         flaggedElements[i].appendChild(span);
     }

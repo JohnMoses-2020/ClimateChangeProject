@@ -3,11 +3,13 @@ body{
     width: 95%;
     min-width: 175px;
     text-align: center;
+    background-color: rgb(233, 231, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: visible;
 }
 
 h2{
-    background-color: gray;
-    color: white;
+    color: black;
 }
 
 strong{
