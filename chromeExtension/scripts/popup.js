@@ -7,7 +7,7 @@ async function requestNumFlags(){
         tabs[0].id,
         { request: true },
         function (response) {
-            if(response.num_flags){
+            if(response){
                 var num_flags = response.num_flags;
             }else{
                 var num_flags = 0;
